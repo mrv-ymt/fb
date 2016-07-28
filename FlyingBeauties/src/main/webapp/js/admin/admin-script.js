@@ -342,7 +342,7 @@ $(document).ready(function(){
 				competitionLogoUrl: $("#competitionLogoUrl").val(),
 				hotRewards: $('input[name=hotRewards]:checked').val(),
 				initPoint: $('#initPoint').val(),
-				listGroup: $('#groups').val(),
+				listGroupId: $('#groups').val(),
 				termAndCondition: $("#termAndCondition").val()
 			}
 

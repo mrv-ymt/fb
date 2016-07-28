@@ -155,6 +155,7 @@ public class CompetitionMngmApiDAO {
 		if(isTopGroup) {
 			sql =  "SELECT * FROM gettopgroup(?)";
 		} else {
+			//sql =  "SELECT * FROM getlistgroup_competition(?)";
 			sql =  "SELECT * FROM getlistgroup_competition(?)";
 		}
 		

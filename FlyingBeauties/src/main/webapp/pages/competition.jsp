@@ -24,8 +24,6 @@
 <script src="<c:url value='/js/jquery.mCustomScrollbar.concat.min.js'/>"></script>
 <script src="<c:url value='/js/jquery.validate.js'/>"></script>
 <script src="<c:url value='/js/submit-handler.js'/>"></script>
-<script src="<c:url value='/js/script.js'/>"></script>
-<script src="<c:url value='/plugins/select2/js/select2.full.min.js'/>"></script>
 <c:set var="baseUrl">
 	<c:url value='/'/>
 </c:set>
@@ -137,4 +135,5 @@
 		<jsp:include page="footer.jsp"></jsp:include>
 	</div>
 </body>
+<script src="<c:url value='/js/script.js'/>"></script>
 </html>

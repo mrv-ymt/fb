@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.ws.rs.GET;
 
+import com.s4you.flybeau.dao.AdministratorDAO;
+import com.s4you.flybeau.dao.AdministratorDAOImpl;
 import com.s4you.flybeau.dto.CompetitionDTO;
 import com.s4you.flybeau.dto.GroupDTO;
 import com.s4you.flybeau.utils.ConstantUtil;
@@ -17,6 +19,7 @@ import com.s4you.flybeau.webapi.dao.CompetitionMngmApiDAO;
 public class CompetitionMngmApiService {
 	
 	CompetitionMngmApiDAO competitionMngmDAO = new CompetitionMngmApiDAO();
+	AdministratorDAO administratorDAO = new AdministratorDAOImpl();
 	
 	/**
 	 * Get List Competition 
@@ -83,7 +86,8 @@ public class CompetitionMngmApiService {
 	public List<GroupDTO> getListGroupCptt(int competitionId) {
 		
 		/* Get List Group */
-		return competitionMngmDAO.getListGroupCptt(competitionId, false);
+//		return competitionMngmDAO.getListGroupCptt(competitionId, false);
+		return administratorDAO.getListGroup(competitionId);
 	}
 	
 	/**

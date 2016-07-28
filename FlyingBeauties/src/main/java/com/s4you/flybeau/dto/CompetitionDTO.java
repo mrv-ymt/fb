@@ -35,6 +35,7 @@ public class CompetitionDTO {
 	private List<ImageInfoDTO> listImageInfo;
 	private List<UserDTO> listUser;
 	private List<GroupDTO> listGroup;
+	private List<String> listGroupId;
 
 	/**
 	 * @return the competitionId
@@ -342,5 +343,13 @@ public class CompetitionDTO {
 	 */
 	public void setInitPoint(int initPoint) {
 		this.initPoint = initPoint;
+	}
+
+	public List<String> getListGroupId() {
+		return listGroupId;
+	}
+
+	public void setListGroupId(List<String> listGroupId) {
+		this.listGroupId = listGroupId;
 	}
 }

@@ -275,7 +275,7 @@ public class AdministratorDAOImpl implements AdministratorDAO {
 			preparedStatement.setInt(10, competition.getInitPoint());
 			Object[]groupIds = new Object[competition.getListGroup().size()];
 			for (int i = 0; i < competition.getListGroup().size(); i++) {
-				groupIds[i] = Integer.parseInt(competition.getListGroup().get(i));
+				groupIds[i] = Integer.parseInt(competition.getListGroupId().get(i));
 			}
 			Array groupIdArray = connection.createArrayOf("integer", groupIds);
 			preparedStatement.setArray(11, groupIdArray);

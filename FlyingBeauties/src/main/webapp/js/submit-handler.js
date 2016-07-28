@@ -983,9 +983,7 @@ function joinCompetition(competitionId, baseUrl, isAnonymous){
 				select2CompetitionGroups.push(select2CompetitionGroup);
 			})
 			var group = $('.competition-group').select2({
-				data: select2CompetitionGroups,
-				//TODO: Enable later
-				minimumResultsForSearch: Infinity
+				data: select2CompetitionGroups
 			})
 			$("#competition-group-modal").modal("show");
 			$('#competition-group-modal .btn-group').on('click', function(e){
